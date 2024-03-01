@@ -24,7 +24,7 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a Computer Science student studying at the University of Ottawa. I enjoy ...";
+  "Product Description ...";
 
 /**
  * List of some of skills or technologies you work on, are learning,
@@ -60,7 +60,7 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        <h2>About Myself</h2>
+        <h2>Challenge</h2>
         <p className="large">{description}</p>
         <hr />
         <ul
