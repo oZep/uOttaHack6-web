@@ -10,7 +10,7 @@ import About from "./Components/About";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
-import Portfolio from "./Components/Portfolio";
+import Portfolio from "./Components/Demo";
 
 import "./styles.css";
 
@@ -24,11 +24,11 @@ import "./styles.css";
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
 const siteProps = {
-  name: "Joey Issa",
-  title: "Software Developer",
+  name: "_ProductName_",
+  title: "_CatchPhrase_",
   email: "jissa023@uottawa.ca",
-  gitHub: "microsoft",
-  linkedIn: "joeyissa",
+  gitHub: "oZep",
+  linkedIn: "joey-issa",
   youTube: "PrepWithZep",
 };
 
