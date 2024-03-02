@@ -123,3 +123,9 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+
+.particle-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

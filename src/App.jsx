@@ -5,12 +5,13 @@
  */
 
 import React from "react";
-
+import ParticleComponent from "./Components/Particle";
 import About from "./Components/About";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Portfolio from "./Components/Demo";
+
 
 import "./styles.css";
 
@@ -39,6 +40,7 @@ const App = () => {
   return (
     <div id="main">
       <Header />
+      <ParticleComponent />
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
       <Portfolio />
