@@ -184,3 +184,53 @@ main, canvas {
   min-height: 100%;
   transform: translate3d(0, 0, 0);
 }
+
+.page {
+  display: none;
+  width: 100%;
+  min-height: calc(var(--vh, 1vh)* 100);
+}
+
+.project {
+  padding: calc(var(--pad)* 2 + 96px) calc(var(--pad)* 2);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.project_heading {
+  font-weight: 400;
+}
+
+.project_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 15px;
+  margin-top: 50px;
+}
+
+.project_list text-btn {
+    transition-property: opacity;
+    transition-duration: .4s;
+    transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
+}
+
+.is-monospaced .project_title {
+  letter-spacing: -0.04em;
+}
+
+.project_title {
+  font-weight: 200;
+  font-size: 8vw;
+  text-align: right;
+}
+
+@media (min-width: 800px) {
+.project_title {
+    font-size: 60px;
+}}
+
+.project_info {
+  margin-top: 5px;
+}
+
