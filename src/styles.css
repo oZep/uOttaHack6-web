@@ -163,3 +163,24 @@ ol {
 .siteHeader_nav ol li {
   position: relative;
 }
+
+.content {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  mix-blend-mode: difference;
+}
+
+main, canvas {
+  display: block;
+}
+
+.content_inner {
+  position: relative;
+  min-height: 100%;
+  transform: translate3d(0, 0, 0);
+}
