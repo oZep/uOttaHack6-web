@@ -1,10 +1,13 @@
 import React from "react";
+import Home from "./Home";
+import Projects from "./Projects";
 
 const Content = () => {
   return (
     <main className="content" id="content" data-scroll="area">
       <div className="content_inner" data-scroll="target">
-        {/* Your other components go here */}
+        <Home />
+        <Projects />
       </div>
     </main>
   );
