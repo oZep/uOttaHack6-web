@@ -24,7 +24,7 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "Product Description ...";
+  "A Machine Learning Model aimed to increase the efficiency of Roombas, increasing efficiency and reducing environmental waste.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
@@ -45,7 +45,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems....";
+  "";
 
 const About = () => {
   return (
@@ -60,7 +60,7 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        <h2>Challenge</h2>
+        {/*<h2>Challenge</h2>*/}
         <p className="large">{description}</p>
         <hr />
         <ul

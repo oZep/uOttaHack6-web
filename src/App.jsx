@@ -24,16 +24,16 @@ import "./styles.css";
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
 const siteProps = {
-  name: "_ProductName_",
-  title: "_CatchPhrase_",
+  name: "Smirth N' Turf",
+  title: "Saving the world, one speck of dust at a time",
   email: "jissa023@uottawa.ca",
   gitHub: "oZep",
   linkedIn: "joey-issa",
   youTube: "PrepWithZep",
 };
 
-const primaryColor = "#3e2b6b";
-const secondaryColor = "#6749ad";
+const primaryColor = "#1f521b";
+const secondaryColor = "#4aff21";
 
 const App = () => {
   return (
