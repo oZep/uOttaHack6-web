@@ -1,50 +1,46 @@
-/**
- * Home component
- *
- * The section at the top of the page to display image of your
- * choice, name and title that describes your career focus.
- */
+import React from 'react';
 
-import React from "react";
-import arrowSvg from "../images/down-arrow.svg";
-import PropTypes from "prop-types";
-
-/**
- * Home background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
- * represents what you see in that image.
- *
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
- */
-import image from "../images/tree.avif";
-
-const Home = ({ name, title }) => {
+const Home = () => {
   return (
-    <section id="home" className="min-height">
-      <img className="background" src={image} alt="" />
-      <div style={{ position: "absolute", top: "6rem", left: "2rem", width: "50rem", padding: "30px" }}>
-        <h1 style={{ lineHeight: ".9",  wordSpacing: "-0.2ch" }}>{name}</h1>
-        <h2>{title}</h2>
-      </div>
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
-        {/* <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }}/>*/}
-      </div>
-    </section>
+    <header className="siteHeader" id="SiteHeader">
+      <h1 className="siteHeader_title">Joey Issa</h1>
+      <p className="siteHeader_label">Software Developer</p>
+      <nav className="siteHeader_nav">
+        <ol>
+          <li className="{ 'is-selected': $store.app.currentPath === '/' } is-selected">
+            <div className="_dot">●</div>
+            <a className="_text" href="/">
+              Home
+            </a>
+          </li>
+          <li className="{ 'is-selected': $store.app.currentPath === '/projects/' }">
+            <div className="_dot">●</div>
+            <a className="_text" href="/projects/">
+              Projects
+            </a>
+          </li>
+          <li className="{ 'is-selected': $store.app.currentPath === '/info/' }">
+            <div className="_dot">●</div>
+            <a className="_text" href="/info/">
+              Info
+            </a>
+          </li>
+          <li className="{ 'is-selected': $store.app.currentPath === '/contact/' }">
+            <div className="_dot">●</div>
+            <a className="_text" href="/contact/">
+              Contact
+            </a>
+          </li>
+          <li className="{ 'is-selected': $store.app.currentPath === '/faq/' }">
+            <div className="_dot">●</div>
+            <a className="_text" href="/faq/">
+              FAQ
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </header>
   );
-};
-
-Home.defaultProps = {
-  name: "",
-  title: "",
-};
-
-Home.propTypes = {
-  name: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
 };
 
 export default Home;
