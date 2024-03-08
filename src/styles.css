@@ -32,6 +32,12 @@ ol {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
 .mask {
   position: "fixed";
   z-index: 3;
@@ -120,6 +126,19 @@ ol {
   column-gap: 3px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.theme_btn input[type="checkbox"] {
+  content: "";
+  margin-right: 4px; 
+  accent-color: black;
+}
+
+input[type="checkbox"]:checked {
+  content: "";
+  background-color: black; 
+  color: white; 
+  display: none;
 }
 
 .siteHeader {
